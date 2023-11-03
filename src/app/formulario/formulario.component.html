@@ -1,0 +1,16 @@
+<body>
+  <div class="formulario">
+    <h2>Formulario de Contacto</h2>
+    <form (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required (change)="checkFormValidity()">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" required (change)="checkFormValidity()">
+      </div>
+      <button type="submit" [disabled]="!isFormValid" (click)="onSubmit()" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+</body>

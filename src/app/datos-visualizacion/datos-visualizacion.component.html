@@ -1,0 +1,19 @@
+<body>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of datos">
+          <td>{{ dato.Nombre }}</td>
+          <td>{{ dato.Email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="limpiarLocalStorage()">Limpiar Datos</button>
+</body>

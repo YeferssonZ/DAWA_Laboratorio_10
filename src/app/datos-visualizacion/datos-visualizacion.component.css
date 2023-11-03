@@ -1,0 +1,72 @@
+body {
+    background: url('https://images8.alphacoders.com/133/1331860.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 97.5vh;
+    color: #333;
+}
+
+.container {
+    width: 70%;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #8A2BE2;
+    color: #fff;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E6E6E6;
+}
+
+td, th {
+    padding: 10px;
+}
+
+button {
+    background-color: #8A2BE2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #9932CC;
+}
+
+button:active {
+    transform: scale(0.98);
+}
